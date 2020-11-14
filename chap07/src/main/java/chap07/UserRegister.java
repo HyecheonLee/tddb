@@ -31,7 +31,7 @@ public class UserRegister {
         if (user != null) {
             throw new DupIdException();
         }
-        repository.save(new User("id", "pw", "email"));
+        repository.save(new User(id, pw, email));
 
         emailNotifier.sendRegisterEmail(email);
     }
