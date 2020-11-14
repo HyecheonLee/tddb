@@ -5,7 +5,7 @@ package chap07;
  * @email rainbow880616@gmail.com
  */
 public interface AutoDebitInfoRepository {
-    AutoDebitInfo findOne(Object userId);
+    AutoDebitInfo findOne(String userId);
 
-    void save(AutoDebitInfo newInfo);
+    void save(AutoDebitInfo info);
 }

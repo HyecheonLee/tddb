@@ -19,7 +19,7 @@ public class StubCardNumberValidator extends CardNumberValidator {
     @Override
     CardValidity validate(String cardNumber) {
         if (invalidNo != null && invalidNo.equals(cardNumber)) {
-            return CardValidity.INVALID;
+            return CardValidity.THEFT;
         }
         return CardValidity.VALID;
     }

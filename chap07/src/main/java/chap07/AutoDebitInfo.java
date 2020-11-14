@@ -7,8 +7,24 @@ import java.time.LocalDateTime;
  * @email rainbow880616@gmail.com
  */
 public class AutoDebitInfo {
-    public AutoDebitInfo(Object userId, Object cardNumber, LocalDateTime now) {
+    private String userId;
+    private String cardNumber;
 
+    public AutoDebitInfo(String userId, String cardNumber) {
+        this.userId = userId;
+        this.cardNumber = cardNumber;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public AutoDebitInfo(String userId, String cardNumber, LocalDateTime now) {
+        this(userId, cardNumber);
     }
 
     public void changeCardNumber(Object cardNumber) {

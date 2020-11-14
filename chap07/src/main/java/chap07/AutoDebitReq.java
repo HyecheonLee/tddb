@@ -13,11 +13,11 @@ public class AutoDebitReq {
         this.cardNumber = cardNumber;
     }
 
-    public String getCardNumber() {
-        return null;
+    public String getUserId() {
+        return userId;
     }
 
-    public String getUserId() {
-        return null;
+    public String getCardNumber() {
+        return cardNumber;
     }
 }
