@@ -22,6 +22,6 @@ class AutoDebitRegisterTest {
     void validCard() {
         final AutoDebitReq req = new AutoDebitReq("user1", "1234123412341234");
         final RegisterResult result = this.register.register(req);
-        Assertions.assertThat(result.getValidity()).isEqualTo(CardValidity.INVALID);
+         Assertions.assertThat(result.getValidity()).isEqualTo(CardValidity.ERROR);
     }
 }

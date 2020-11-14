@@ -16,7 +16,7 @@ public class RegisterResult {
     }
 
     public static RegisterResult error(CardValidity validity) {
-        return null;
+        return new RegisterResult(validity);
     }
 
     public static RegisterResult success() {
